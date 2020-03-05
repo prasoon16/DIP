@@ -6,6 +6,9 @@ from matplotlib import pyplot as plt
 def add_guass_noise(img, mu, sigma):
     rand = np.random.normal(mu, sigma, img.shape).astype(np.uint8)
     #plt.plot(rand.reshape())
+    # cv2.imshow("rand", rand)
+    # cv2.waitKey(0)
+    print (rand[1,:10])
     return cv2.add(img, rand)
 
 def plot_pixels(orignal, noisy, fil, bil):

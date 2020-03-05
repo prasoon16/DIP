@@ -29,7 +29,7 @@ def zoom(img, factor):
     return z_img
 
 
-img = cv2.imread("images/coyote.jpg")
+img = cv2.imread("images/flower.png")
 d_img = zoom(img, 4)
 cv2.imshow("orig", img)
 cv2.waitKey(0)
